@@ -20,14 +20,20 @@ O projeto está organizado nas seguintes classes principais:
 
 - `MainActivity`: Tela principal que contém a lista de usuários e o botão para navegar até a tela de cadastro.
 - `CreateUser`: Atividade responsável por capturar os dados do novo usuário e salvá-los.
-- `UserAdapter`: (Em desenvolvimento) Adaptador para gerenciar a exibição dos itens na `RecyclerView`.
+- `UserAdapter`: Adaptador para gerenciar a exibição dos itens na `RecyclerView`.
+
+## 🗓️ Atualizações de hoje (26/03/2026)
+
+- Implementação do `UserAdapter` para exibir os usuários na lista.
+- Consolidação do fluxo de cadastro e retorno para atualização da `RecyclerView` na `MainActivity`.
+
 
 ## ⚙️ Como executar
 
 1. Clone este repositório.
 2. Abra o projeto no **Android Studio**.
 3. Sincronize o Gradle.
-4. Execute em um emulador ou dispositivo físico com Android 5.0 (API 21) ou superior.
+4. Execute em um emulador ou dispositivo físico com Android 7.0 (API 24) ou superior.
 
 ---
 *Desenvolvido como projeto acadêmico.*
