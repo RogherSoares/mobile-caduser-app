@@ -60,5 +60,13 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    //Método chamado smepre que a tela volta a ficar visivel para o usuário
+    @Override
+    protected void onResume() {
+        super.onResume();
+        //Avisa o adaptador que a fonte de dodos (listaNomes) pode ter sido alterada
+        //na outra tela, forçando a atualização visual da lista
+        adapter.notifyDataSetChanged();
+    }
 
 }
