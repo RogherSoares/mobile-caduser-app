@@ -1,20 +1,15 @@
 package com.roghersoares.cadastrodeusuario;
-
+//importações da bivliotecas necessarias do ecossistema Android e JAVA
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import java.util.ArrayList;
 import java.util.List;
 
+//Calsse princiapal que estende AppCompatActivity para ganahar recursos de interface moderna
 public class MainActivity extends AppCompatActivity {
     //declaração de componentes visuais e do adaptador da lista
     RecyclerView recyclerView;
@@ -31,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //Vincula o arquivo de layoute XML (activity_main.xml) a essa classe java
+        //Vincula o arquivo de layoute XML (activity_main.xml) a esta classe java
         setContentView(R.layout.activity_main);
 
         //Regra de negócio: insere um texto no topo da lista, caso ela esteja vazia

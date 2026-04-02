@@ -1,20 +1,18 @@
 package com.roghersoares.cadastrodeusuario;
-
+//importações nescessarias para inflar layouts, gerenciar views e a lista de dados
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import java.util.List;
 
 //Classe Adapter: Gererncia a criação e o preenchimento dos itens na RecycleView
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     //Atributo privado que armazena a referencia dos dados que serao exibidos
     private List<String> listaUsuarios;
-    //Construtor que permite que a MAinActivity "entregue" a lista de dados para este adapter
+    //Construtor que permite que a MAinActivity "entregue" a lista de dados para este Adapter
     public UserAdapter(List<String> lista) {
         this.listaUsuarios = lista;
     }
